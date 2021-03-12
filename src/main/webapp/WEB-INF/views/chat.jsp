@@ -59,7 +59,7 @@
         ws.onmessage = function(data) {
             var msg = data.data;
             if(msg != null && msg.trim() != ''){
-                $("#chating").append("<p>" + msg + "</p>");
+                $("#chating").prepend("<p>" + msg + "</p>");
             }
         }
 
